@@ -6,6 +6,7 @@ import {
   Cell,
   Card,
   CardTitle,
+  CardText,
   CardActions,
   Button,
   CardMenu,
@@ -31,6 +32,11 @@ class Projects extends Component {
           >
             React Project 1
           </CardTitle>
+          <CardText>Ipsum alalfhafaddfgSFGF</CardText>
+          <CardActions border>
+            <button colored>GitHub</button>
+            <button colored>Deployed App</button>
+          </CardActions>
         </Card>
       );
     } else if (this.state.activeTab === 1) {
