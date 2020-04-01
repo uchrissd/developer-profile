@@ -22,22 +22,88 @@ class Projects extends Component {
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
-        <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
-          <CardTitle
-            style={{
-              color: "#fff",
-              height: "176px",
-              background: "url() center / cover"
-            }}
-          >
-            React Project 1
-          </CardTitle>
-          <CardText>Ipsum alalfhafaddfgSFGF</CardText>
-          <CardActions border>
-            <button colored>GitHub</button>
-            <button colored>Deployed App</button>
-          </CardActions>
-        </Card>
+        <div className="projects-grid">
+          {/* Project 1 */}
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png) center / cover"
+              }}
+            >
+              React Project 1
+            </CardTitle>
+            <CardText>
+              I"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </CardText>
+            <CardActions border>
+              <Button colored>GitHub</Button>
+              <Button colored>Deployed App</Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 2 */}
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png) center / cover"
+              }}
+            >
+              React Project 2
+            </CardTitle>
+            <CardText>
+              I"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </CardText>
+            <CardActions border>
+              <Button colored>GitHub</Button>
+              <Button colored>Deployed App</Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 3 */}
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png) center / cover"
+              }}
+            >
+              React Project 3
+            </CardTitle>
+            <CardText>
+              I"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </CardText>
+            <CardActions border>
+              <Button colored>GitHub</Button>
+              <Button colored>Deployed App</Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+        </div>
       );
     } else if (this.state.activeTab === 1) {
       return (
@@ -73,13 +139,12 @@ class Projects extends Component {
           <Tab>JavaScript</Tab>
           <Tab>React</Tab>
         </Tabs>
-        <section className="projects-grid">
-          <Grid className="projects-grid">
-            <Cell col={12}>
-              <div className="content"> {this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-        </section>
+
+        <Grid>
+          <Cell col={12}>
+            <div className="content"> {this.toggleCategories()}</div>
+          </Cell>
+        </Grid>
       </div>
     );
   }
