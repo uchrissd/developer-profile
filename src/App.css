@@ -7,6 +7,10 @@
   height: 100%;
 }
 
+.title {
+  fontfamily: "Space Mono";
+}
+
 .profile-image {
   height: 250px;
   padding-top: 5em;
