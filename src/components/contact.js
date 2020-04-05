@@ -30,7 +30,7 @@ class Contact extends Component {
               <List>
                 <ListItem>
                   <ListItemContent
-                    style={{ fontSize: "30px", fontFamily: "Anton" }}
+                    style={{ fontSize: "30px", fontFamily: "Space Mono" }}
                   >
                     <i className="fa fa-phone-square" aria-hidden="true" />
                     (760) 822-7770
@@ -39,7 +39,7 @@ class Contact extends Component {
 
                 <ListItem>
                   <ListItemContent
-                    style={{ fontSize: "30px", fontFamily: "Anton" }}
+                    style={{ fontSize: "30px", fontFamily: "Space Mono" }}
                   >
                     <i className="fa fa-envelope" aria-hidden="true" />
                     uchrissd@protonmail.com
