@@ -9,7 +9,7 @@ class Contact extends Component {
           <Cell col={6}>
             <h2>Christopher Underwood</h2>
             <img
-              src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+              src={require("../images/chrismexicocity.jpg.PNG")}
               alt="avatar"
               style={{ height: "250px" }}
             />
@@ -24,7 +24,7 @@ class Contact extends Component {
             </p>
           </Cell>
           <Cell col={6}>
-            <h2>Contact Me</h2>
+            <h2>Contact</h2>
             <hr />
             <div className="contact-list">
               <List>
