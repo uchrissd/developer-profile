@@ -97,3 +97,14 @@
   padding-right: 5rem;
   font-family: "Space Mono", monospace;
 }
+
+/* Resume page css */
+.resume-page {
+  display: flex;
+}
+
+.resume-right-col {
+  background: black;
+  color: white;
+  padding: 2em;
+}
