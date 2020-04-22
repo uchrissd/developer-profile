@@ -78,7 +78,7 @@ class Resume extends Component {
             <Skills skill="– Node.js" />
             <Skills skill="– Express" />
             <Skills skill="– mySQL" />
-            <Skills skill="– MongoDB" />
+            <Skills skill="–  MongoDB" />
           </Cell>
         </Grid>
       </div>

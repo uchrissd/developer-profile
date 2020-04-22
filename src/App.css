@@ -8,7 +8,7 @@
 }
 
 .title {
-  fontfamily: "Space Mono";
+  font-family: "Exo 2", sans-serif;
 }
 
 .profile-image {
@@ -24,7 +24,7 @@
 }
 
 .banner-text h1 {
-  font-family: monospace;
+  font-family: "Exo 2", sans-serif;
   font-size: 66px;
   font-weight: bold;
   color: white;
@@ -78,11 +78,11 @@
 }
 
 .contact-grid h2 {
-  font-family: "Space Mono", monospace;
+  font-family: "Exo 2", sans-serif;
 }
 
 .contact-gird p {
-  font-family: "Space Mono", monospace;
+  font-family: "Exo 2", sans-serif;
   font-weight: bold;
 }
 
@@ -95,7 +95,7 @@
 .contact-list i {
   font-size: 66px;
   padding-right: 5rem;
-  font-family: "Space Mono", monospace;
+  font-family: "Exo 2", sans-serif;
 }
 
 /* Resume page css */

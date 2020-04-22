@@ -9,7 +9,7 @@ function App() {
     <div className="demo-big-content">
       <Layout>
         <Header
-          style={{ backgroundColor: "#000000", fontFamily: "Space Mono" }}
+          style={{ backgroundColor: "#000000", fontFamily: "Exo !important" }}
           title={
             <Link style={{ textDecoration: "none", color: "white" }} to="/">
               Chris Underwood
@@ -17,7 +17,7 @@ function App() {
           }
           scroll
         >
-          <Navigation style={{ fontFamily: "Space Mono" }}>
+          <Navigation style={{ fontFamily: "Exo" }}>
             <Link to="/About">About</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
@@ -25,12 +25,19 @@ function App() {
         </Header>
         <Drawer
           title={
-            <Link style={{ textDecoration: "none", color: "black" }} to="/">
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "black",
+                fontFamily: "Exo",
+              }}
+              to="/"
+            >
               Chris Underwood
             </Link>
           }
         >
-          <Navigation style={{ fontFamily: "Space Mono" }}>
+          <Navigation style={{ fontFamily: "Exo" }}>
             <Link to="/about">About</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
