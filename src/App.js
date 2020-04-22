@@ -10,19 +10,27 @@ function App() {
       <Layout>
         <Header
           style={{ backgroundColor: "#000000", fontFamily: "Space Mono" }}
-          title="Chris Underwood"
+          title={
+            <Link style={{ textDecoration: "none", color: "white" }} to="/">
+              Chris Underwood
+            </Link>
+          }
           scroll
         >
           <Navigation style={{ fontFamily: "Space Mono" }}>
-            <Link to="/resume">Resume</Link>
-            <Link to="/about">About</Link>
+            <Link to="/About">About</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer title="Chris Underwood">
+        <Drawer
+          title={
+            <Link style={{ textDecoration: "none", color: "black" }} to="/">
+              Chris Underwood
+            </Link>
+          }
+        >
           <Navigation style={{ fontFamily: "Space Mono" }}>
-            <Link to="/resume">Resume</Link>
             <Link to="/about">About</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
