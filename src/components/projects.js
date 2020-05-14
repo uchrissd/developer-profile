@@ -32,9 +32,7 @@ class Projects extends Component {
                 background:
                   "url(https://github.com/uchrissd/druggler/raw/master/images/login2.jpg) center / cover",
               }}
-            >
-              Druggler
-            </CardTitle>
+            ></CardTitle>
             <CardText>
               Druggler is a web based application that allows users to track
               when they need to take their medications, as well as allowing
@@ -59,47 +57,12 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
-
-          {/* Project 2 */}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
-            <CardTitle
-              style={{
-                color: "#fff",
-                height: "176px",
-                background:
-                  "url(https://github.com/uchrissd/dungeon-bud/raw/master/public/images/sign-up.jpg) center / cover",
-              }}
-            >
-              Dungeon Bud
-            </CardTitle>
-            <CardText>
-              Dungeon Bud is a web application that allows Dungeons & Dragons
-              players to save characters and campaigns to a database. The goal
-              of the application is to help players save their campaign and
-              character information to a database. Users have unique profiles
-              where they can add, edit or delete the campaigns and characters
-              that they have added to the database. They can also add their
-              characters to other player’s campaigns or add other player's
-              characters to the campaigns they have created.
-            </CardText>
-            <CardActions border>
-              <Button colored>
-                {" "}
-                <a href="https://github.com/uchrissd/dungeon-bud">
-                  GitHub{" "}
-                </a>{" "}
-              </Button>
-              <Button colored>
-                {" "}
-                <a href="https://dungeon-bud.herokuapp.com/">Deployed App</a>
-              </Button>
-            </CardActions>
-            <CardMenu style={{ color: "#fff" }}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-
-          {/* Project 3 */}
+        </div>
+      );
+    } else if (this.state.activeTab === 1) {
+      return (
+        <div className="projects-grid">
+          {/* js project 1 */}
           <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
             <CardTitle
               style={{
@@ -140,26 +103,127 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
-        </div>
-      );
-    } else if (this.state.activeTab === 1) {
-      return (
-        <div>
-          <h1>This is MongoDB</h1>
+
+          {/* js project 2 */}
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://github.com/uchrissd/city-weather-dashboard/raw/master/assets/images/desktop-screen-shot.jpg) center / cover",
+              }}
+            ></CardTitle>
+            <CardText>
+              This is a weather dashboard that was built as a project for the
+              UCSD web development bootcamp program. This application allows a
+              user to search for any city in the world and it will return real
+              time weather conditions in that city, as well as a 5-day weather
+              forecast. The application relys on the Open Weather API to access
+              the weather data.
+            </CardText>
+            <CardActions border>
+              <Button colored>
+                {" "}
+                <a href="https://github.com/uchrissd/city-weather-dashboard">
+                  GitHub{" "}
+                </a>{" "}
+              </Button>
+              <Button colored>
+                {" "}
+                <a href="https://raw.githubusercontent.com/uchrissd/city-weather-dashboard/master/assets/images/desktop-screen-shot.jpg">
+                  Deployed App
+                </a>
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* js project 1 */}
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://raw.githubusercontent.com/uchrissd/browser-password-generator/master/assets/images/password-generator-full-screenshot.jpg) center / cover",
+              }}
+            ></CardTitle>
+            <CardText>
+              This is a password generator that I built for a project in the
+              UCSD web development bootcamp program. The goal of the password
+              generator is to give a user the option to choose which characters
+              they would like to include in their password, such as numbers,
+              uppercase letters or special characters, as well as the length of
+              the password. The user can then copy the newly generated password
+              to their clipboard. The application runs on JavaScript and uses
+              Bootstrap to provide styling and responsiveness.
+            </CardText>
+            <CardActions border>
+              <Button colored>
+                {" "}
+                <a href="https://github.com/uchrissd/browser-password-generator">
+                  GitHub{" "}
+                </a>{" "}
+              </Button>
+              <Button colored>
+                {" "}
+                <a href="https://uchrissd.github.io/chrisunderwood.github.io/">
+                  Deployed App
+                </a>
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
         </div>
       );
     } else if (this.state.activeTab === 2) {
       return (
-        <div>
-          <h1>This is JavaScript</h1>
+        <div className="projects-grid">
+          {/* Project 2 */}
+          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://github.com/uchrissd/dungeon-bud/raw/master/public/images/sign-up.jpg) center / cover",
+              }}
+            ></CardTitle>
+            <CardText>
+              Dungeon Bud is a web application that allows Dungeons & Dragons
+              players to save characters and campaigns to a database. The goal
+              of the application is to help players save their campaign and
+              character information to a database. Users have unique profiles
+              where they can add, edit or delete the campaigns and characters
+              that they have added to the database. They can also add their
+              characters to other player’s campaigns or add other player's
+              characters to the campaigns they have created.
+            </CardText>
+            <CardActions border>
+              <Button colored>
+                {" "}
+                <a href="https://github.com/uchrissd/dungeon-bud">
+                  GitHub{" "}
+                </a>{" "}
+              </Button>
+              <Button colored>
+                {" "}
+                <a href="https://dungeon-bud.herokuapp.com/">Deployed App</a>
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#fff" }}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
         </div>
       );
     } else if (this.state.activeTab === 3) {
-      return (
-        <div>
-          <h1>This is JavaScript</h1>
-        </div>
-      );
+      return <div></div>;
     }
   }
 
@@ -171,10 +235,10 @@ class Projects extends Component {
           onChange={(tabId) => this.setState({ activeTab: tabId })}
           ripple
         >
-          <Tab>Projects</Tab>
-          {/* <Tab>MongoDB</Tab>
+          <Tab>React</Tab>
           <Tab>JavaScript</Tab>
-          <Tab>React</Tab> */}
+          <Tab>mySQL</Tab>
+          {/* <Tab>MongoDB</Tab> */}
         </Tabs>
 
         <Grid>
