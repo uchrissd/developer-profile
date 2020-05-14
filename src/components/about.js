@@ -79,6 +79,10 @@ class Resume extends Component {
             <Skills skill="– Express" />
             <Skills skill="– mySQL" />
             <Skills skill="–  MongoDB" />
+            <Skills skill="–  Amazon Web Services" />
+            <Skills skill="–  Heroku" />
+            <Skills skill="–  Github" />
+            <Skills skill="–  Photoshop" />
           </Cell>
         </Grid>
       </div>

@@ -11,9 +11,10 @@ function App() {
         <Header
           style={{ backgroundColor: "#000000", fontFamily: "Exo !important" }}
           title={
-            <Link style={{ textDecoration: "none", color: "white" }} to="/">
-              Chris Underwood
-            </Link>
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              to="/"
+            ></Link>
           }
           scroll
         >

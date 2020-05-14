@@ -13,7 +13,7 @@ class Landing extends Component {
               className="profile-image"
             />
             <div className="banner-text">
-              <h1>Full-Stack Web Developer</h1>
+              <h1>Chris Underwood</h1>
               <hr />
 
               <p style={{ color: "#c4b49a" }}>
